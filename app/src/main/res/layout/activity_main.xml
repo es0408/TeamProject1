@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:textColor="@android:color/black"
+        android:text="세미콜론님,\n추억을 기록해보세요!"
+        android:layout_margin="30dp"
+        android:textSize="30dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:weightSum="9">
+
+
+       <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:weightSum="9">
+
+
+           <ImageButton
+               android:id="@+id/btn_photo"
+               android:layout_width="wrap_content"
+               android:layout_height="130dp"
+               android:layout_weight="3"
+               android:background="@drawable/btn_round"
+               android:orientation="horizontal"
+               android:src="@drawable/photo"
+               android:layout_margin="5dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_round"
+                android:src="@drawable/history"
+                android:layout_weight="3"
+                android:layout_margin="5dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_round"
+                android:src="@drawable/profile"
+                android:layout_weight="3"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:weightSum="9">
+
+            <TextView
+                android:id="@+id/text_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_photo"
+                android:text="사진 추가하기"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/text_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_continue"
+                android:text="이어 작성하기"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/text_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_profile"
+                android:text="나의 여행기록"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="3"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
